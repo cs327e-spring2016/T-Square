@@ -94,7 +94,7 @@ def get_result(cur,num):
 		# 		Good_Three_shooting_team_check.append(row[1])
 
 	# operating 3rd query
-	elif num == 4:
+	#elif num == 4:
 
 
 	# operating 6th query
