@@ -95,3 +95,5 @@ CREATE TABLE team_stats (
 );
 
 #For the player and player_stats table, we used a jason file downloaded online 
+#Pandas module
+#requests module
