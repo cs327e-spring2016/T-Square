@@ -6429,3 +6429,109 @@ INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 
 DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/wrighbr03/gamelog/2016/ HTTP/1.1" 200 None
 INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
 DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/wrighbr03/gamelog/2015/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/r/ricegl02/gamelog/2015/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/r/ricegl02/gamelog/2015/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/hillge01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/hillge01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/f/fredeji01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/f/fredeji01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/c/covinro01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/c/covinro01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/p/poweldw01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/p/poweldw01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/lawalga01/gamelog/2011/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/lawalga01/gamelog/2011/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/hibbero01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/g/ginobma01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/g/ginobma01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/hawessp01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/hawessp01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/singlky01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/singlky01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/mbahalu01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/mbahalu01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/stuckro01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/stuckro01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/summeda01/gamelog/2013/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/summeda01/gamelog/2013/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/n/nedovne01/gamelog/2014/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/n/nedovne01/gamelog/2014/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/millsel01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/millsel01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/j/johnswe01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/j/johnswe01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/webstma02/gamelog/2015/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/webstma02/gamelog/2015/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/b/bareajo01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/b/bareajo01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/lavinza01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/lavinza01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/harremo01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/h/harremo01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/o/olynyke01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/o/olynyke01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/b/bensoke02/gamelog/2012/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/b/bensoke02/gamelog/2012/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/willilo02/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/w/willilo02/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/millemi01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/m/millemi01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/leeco01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/l/leeco01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/v/vujacsa01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/v/vujacsa01/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/smithja02/gamelog/2016/ HTTP/1.1" 200 None
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): www.basketball-reference.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /players/s/smithja02/gamelog/2016/ HTTP/1.1" 200 None

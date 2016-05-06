@@ -3,13 +3,11 @@ import basketballCrawler as bc
 import json
 from bs4 import BeautifulSoup
 import pymysql
+
 import requests
 import unicodedata
-
 PLAYER_TABLE_COLUMN_NAME =["player_id","name","height","weight"]
-
 PLAYER_POSITION_TABLE_COLUMN_NAME = ["player_id","position"]
-
 PLAYER_STATS_TABLE_COLUMN_NAME = ["player_id","assistant","block","fieldg","fieldg3","fieldg3_pct","freet_attemp","minute_played","offrebound","personal_foul","points",
 								  "steal","turnover","total_reb","fieldg_attempt","freethrow","fieldg3_attempt","fieldg_pct","freethrow_pct","game_date","derebound"]
 

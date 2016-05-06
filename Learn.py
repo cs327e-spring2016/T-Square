@@ -122,13 +122,10 @@ def create_insert_string(table_name,column_value,column_name):
 	return insert_string
 
 def main():
-	print("cc")
 	conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock',
 	                       user='root', passwd='15174903378', db='NBA')
 	cur = conn.cursor()
-
 	players = bc.loadPlayerDictionary("players.json")
-	print("players")
 	urllist = []
 	for name in players:
 		playerurl = players[name].gamelog_url_list
@@ -137,7 +134,6 @@ def main():
 
 		for item in playerurl:
 			urllist.append(item)
-
 	#gete the column headers and find the schema
 	leb = urllist[0]
 	player_string_key = leb
@@ -160,7 +156,6 @@ def main():
 		text = BeautifulSoup(req.text, "html.parser")
 		stats = text.find('table', {'id': 'pgl_basic'})
 		rows = [i.get_text().split('\n') for i in stats.tbody.find_all('tr')[2:]] 
-		print(rows)
 		for i in range(len(rows)):
 			if (rows[i][1] != "Rk"):
 				player_stats_table(get_player_stats_info(rows[i],player_id),cur) 
