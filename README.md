@@ -1,4 +1,5 @@
 # T-Square
+#Main file are:Playerposition_player_player_stats.py Game.py and team_team_stats.py
 #create database
 CREATE DATABASE nba;
 
