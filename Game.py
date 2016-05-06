@@ -1,12 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-
-import pandas as pd
-import numpy as np
-
 import re
 import pymysql
-#needed to convert unicode to numeric
 import unicodedata
 
 MONTH = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
@@ -34,12 +29,6 @@ def srapping_game_data(leb):
 	stats = text.find('table', {'id': 'teams_games'})
 	if(stats == None):
 		return False
-		# if(NEW_TEAM_ABBREV[team] != None ):
-		# 	temp = rapping_game_data(NEW_TEAM_ABBREV[team].Abbrev,year,'http://www.basketball-reference.com/teams/'+NEW_TEAM_ABBREV[team].Abbrev+'/'+str(year)+'_games.html')
-		# 	if(temp == None)
-		# 	return 
-		# else:
-		# 	return None
 	else:
 		cols = [i.get_text() for i in stats.thead.find_all('th')][2:]  
 		cols = [x.encode('UTF8') for x in cols]    
@@ -63,9 +52,6 @@ def convert_team_name(item):
 		if item == TEAM_NAME[i]:
 			return TEAM_ABBREV[i]
 	return NEW_TEAM_NAME[item] if item in NEW_TEAM_NAME else False
-
-
-
 
 def get_game_info(rows,team_abbrev):
 	game_info = []
@@ -91,15 +77,7 @@ def get_game_info(rows,team_abbrev):
 			game_info.append(guest_score)
 			game_info.append(host_score)
 	return game_info
-'''
-def get_game_stats_all_team_per_year(team,year):
-	leb = 'http://www.basketball-reference.com/teams/'+team+'/'+str(year)+'_games.html'
-	rows = srapping_game_data(leb)
-	for i in range(len(rows)):
-		if (rows[i][1] != "G"):
-			return get_game_info(rows[i],team)
-			#get_game_info(rows[i],team)
-'''
+
 def game_table (game_info, cur):
 	game_info_check = []
 	for i in game_info:
@@ -107,7 +85,6 @@ def game_table (game_info, cur):
 			game_info_check.append(i)
 			if len(i) != 0:
 				output1 = create_insert_string("game",i,GAME_TABLE_COLUMN_NAME) 
-				print(output1)
 				cur.execute(output1)
 				cur.connection.commit()
 
@@ -131,16 +108,6 @@ def create_insert_string(table_name,column_value,column_name):
 	return insert_string
 
 def main():
-	'''
-	for year in range (2010,2017):
-		for team in TEAM_ABBREV:
-				leb = 'http://www.basketball-reference.com/teams/'+team+'/'+str(year)+'_games.html'
-				rows = srapping_game_data(leb)
-				for i in range(len(rows)):
-					if (rows[i][1] != "G"):
-						get_game_info(rows[i],team)
-			#get_game_stats_all_team_per_year(team,year)
-	'''
 	conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock',
 	                       user='root', passwd='15174903378', db='NBA')
 	cur = conn.cursor()
@@ -162,9 +129,7 @@ def main():
 				for i in range(len(rows)):
 					if (rows[i][1] != "G"):
 						all_game_info.append(get_game_info(rows[i],team))
-
 		game_table(all_game_info,cur) 
-			#game_table(get_game_stats_all_team_per_year(team,year),cur) 
 	cur.close()
 	conn.close()
 	

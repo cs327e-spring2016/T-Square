@@ -45,14 +45,6 @@ def get_result(cur,num):
 
 		print("Based on their on-court performance, there is a number of "+ str(total_num) + " distinct centers getting more than 30 points and 15 rebounds within 1 game in NBA ")
 
-
-	# operating 2nd query
-	
-
-	# operating 4th query
-	#elif num == 4:
-
-
 	# operating 2nd query
 	elif num == 2:
 		display_query = "select distinct t1.name as Name, t2.points as Point, t2.assistant as Assistant from player as t1 inner join player_stats as t2 on t1.player_id = t2.player_id where t2.points > 30 and t2.assistant <3;"
