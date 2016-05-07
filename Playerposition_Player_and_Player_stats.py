@@ -151,7 +151,6 @@ def main():
 		leb = item
 		player_string_key = leb
 		player_id = leb[46:55].strip('/')
-		print(player_id)
 		req = requests.get(player_string_key)
 		text = BeautifulSoup(req.text, "html.parser")
 		stats = text.find('table', {'id': 'pgl_basic'})
@@ -161,7 +160,6 @@ def main():
 			for j in i.find_all('td'):
 				app.append(j.get_text())
 			rows.append(app)
-			print(rows)
 		for i in range(len(rows)):
 			if (len(rows[i])!= 0 ):
 			#if (rows[i][1] != "Rk"):
