@@ -44,33 +44,33 @@ def player_table(player_info,cur):
 
 def get_player_stats_info(rows,player_id):
 	player_stats_info = []
-	if (len(rows) < 31):
-		Date = rows[3]
+	if (len(rows) < 30):
+		Date = rows[2]
 		for i in range(len(PLAYER_STATS_TABLE_COLUMN_NAME)):
 			player_stats_info.append(None)
 		player_stats_info[0] = player_id
 		player_stats_info[-2] = Date
 	else:
-		Date = rows[3]
-		Minutes_played = rows[10]
-		Fieldg = rows[11]
-		Fieldg_attempts = rows[12]  
-		Fieldg_pct = rows[13]
-		Fieldg3 = rows[14]
-		Fieldg3_attempt = rows[15]
-		Fieldg3_pct = rows[16]
-		Freethrow = rows[17]
-		Freethrow_attempt = rows[18]
-		Freethrow_pct = rows[19]
-		orb = rows[20]
-		drb = rows[21]
-		trb = rows[22]
-		ast = rows[23]
-		stl = rows[24]
-		blk = rows[25]
-		tov = rows[26]
-		pf = rows[27]
-		pts = rows[28]
+		Date = rows[2]
+		Minutes_played = rows[9]
+		Fieldg = rows[10]
+		Fieldg_attempts = rows[11]  
+		Fieldg_pct = rows[12]
+		Fieldg3 = rows[13]
+		Fieldg3_attempt = rows[14]
+		Fieldg3_pct = rows[15]
+		Freethrow = rows[16]
+		Freethrow_attempt = rows[17]
+		Freethrow_pct = rows[18]
+		orb = rows[19]
+		drb = rows[20]
+		trb = rows[21]
+		ast = rows[22]
+		stl = rows[23]
+		blk = rows[24]
+		tov = rows[25]
+		pf = rows[26]
+		pts = rows[27]
 		player_stats_info.append(player_id)
 		player_stats_info.append(ast)
 		player_stats_info.append(blk)
@@ -92,13 +92,12 @@ def get_player_stats_info(rows,player_id):
 		player_stats_info.append(Freethrow_pct)
 		player_stats_info.append(Date)
 		player_stats_info.append(drb)
-	#print(player_stats_info)
 	return player_stats_info
 
 
 def player_stats_table(player_stats_info,cur):
 	output1 = create_insert_string("player_stats",player_stats_info,PLAYER_STATS_TABLE_COLUMN_NAME) 
-	print(output1)
+	# print(output1)
 	cur.execute(output1)
 	cur.connection.commit()
 
@@ -121,58 +120,19 @@ def create_insert_string(table_name,column_value,column_name):
 	insert_string += ");"
 	return insert_string
 
-# def insert_DB(rows):
-
-
-
-
-
-    		# cur.execute("INSERT INTO game (date) VALUES (%s)",(Date))
-    		# cur.execute("INSERT INTO player_stats(player_id, game_date, assistant, block, dereound, fieldg, fieldg3,) VALUES  (%s, %s)", (Player_id, Date))
-
-    	# cur.execute("INSERT INTO player_stats (player_id, game_date) VALUES (%s, %s)", (Player_id, Date))
-    	# cur.connection.commit()
-
-	
-	# # convert rows to strings
-	# for i in range(len(rows)):
-	#     rows[i] = [x.encode('UTF8') for x in rows[i]]                          
-
-	#print(rows)
-
-
-	# short = []
-
-	# for i in range(len(rows)):
-	#     if len(rows[i]) < 31:
-	#         short.append(i)
-    
-
-	 
-	# new_rows = []
-
-	# for i in range(len(rows)):
-	#     if i in short:
-	#         continue
-	#     else:
-	#         new_rows.append(rows[i])
-
-	# l = range(len(new_rows))
 def main():
 	conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock',
 	                       user='root', passwd='15174903378', db='NBA')
 	cur = conn.cursor()
-
 	players = bc.loadPlayerDictionary("players.json")
 	urllist = []
 	for name in players:
 		playerurl = players[name].gamelog_url_list
 
-		# player_table(get_player_info(name,players),cur)
+		player_table(get_player_info(name,players),cur)
 
 		for item in playerurl:
 			urllist.append(item)
-
 	#gete the column headers and find the schema
 	leb = urllist[0]
 	player_string_key = leb
@@ -191,14 +151,21 @@ def main():
 		leb = item
 		player_string_key = leb
 		player_id = leb[46:55].strip('/')
+		print(player_id)
 		req = requests.get(player_string_key)
 		text = BeautifulSoup(req.text, "html.parser")
 		stats = text.find('table', {'id': 'pgl_basic'})
-		rows = [i.get_text().split('\n') for i in stats.tbody.find_all('tr')[2:]] 
+		rows = []
+		for i in stats.tbody.find_all('tr'):
+			app = []
+			for j in i.find_all('td'):
+				app.append(j.get_text())
+			rows.append(app)
+			print(rows)
 		for i in range(len(rows)):
-			if (rows[i][1] != "Rk"):
+			if (len(rows[i])!= 0 ):
+			#if (rows[i][1] != "Rk"):
 				player_stats_table(get_player_stats_info(rows[i],player_id),cur) 
-		# insert_DB(player_id,rows)
 
 	cur.close()
 	conn.close()

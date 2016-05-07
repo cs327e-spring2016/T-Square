@@ -1,5 +1,8 @@
 # T-Square
+<<<<<<< Updated upstream
 #Main file are:Playerposition_player_player_stats.py Game.py and team_team_stats.py
+=======
+>>>>>>> Stashed changes
 #create database
 CREATE DATABASE nba;
 
@@ -96,5 +99,8 @@ CREATE TABLE team_stats (
 );
 
 #For the player and player_stats table, we used a jason file downloaded online 
+<<<<<<< Updated upstream
 #Pandas module
 #requests module
+=======
+>>>>>>> Stashed changes

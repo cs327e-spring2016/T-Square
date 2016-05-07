@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-import prettytable
+#import prettytable
 
 import pandas as pd
 import numpy as np

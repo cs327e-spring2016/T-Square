@@ -31,8 +31,21 @@ cols[5]='home_away'
 cols[7]='win-loss'
 
 # get rows
-rows = [i.get_text().split('\n') for i in stats.tbody.find_all('tr')] 
+#rows = [i.get_text().split() for i in stats.tbody.find_all('tr')] 
+rows = []
+for i in stats.tbody.find_all('tr'):
+    # rows=[j.get_text().split() for j in i.find_all('td')]
+    # print(rows)
+    app = []
+    for j in i.find_all('td'):
+        # print(j.get_text())
+        app.append(j.get_text())
+    rows.append(app)
+    print(rows)
 
+        # print(rows)
+# for i in stats.tbody.find_all('tr'):
+#     print (i.get_text())
 # leb = 'http://www.basketball-reference.com/players/j/jamesle01/gamelog/2015/'
 # #######
 # #lebron
@@ -56,7 +69,7 @@ rows = [i.get_text().split('\n') for i in stats.tbody.find_all('tr')]
 
 # # get rows
 # rows = [i.get_text().split('\n') for i in stats.tbody.find_all('tr')] 
-print(rows)
+# print(rows)
 
 '''
 # convert rows to strings
